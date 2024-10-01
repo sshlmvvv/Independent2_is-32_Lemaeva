@@ -10,9 +10,38 @@
 
 <body>
     <header>
+<nav>
+    <style>
+         nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-    </header>
+        .button1 {
+            background-color: #00ffee;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button1:hover {
+            background-color: #a392ff;
+        }
+
+    </style>
+    <a href="#Independent1" class="button1">САМОСТІЙНА РОБОТА №1</a>
+    <a href="#Independent2" class="button1">САМОСТІЙНА РОБОТА №2</a>
+</nav>
+</header>
     <main>
+        <div id="ind1">
     <h1>САМОСТІЙНА РОБОТА №1</h1>
     <h2>1.1. Що таке HTML? </h2>
     <h1>Мій перший заголовок</h1>
@@ -928,6 +957,1340 @@
         <input type="email" id="email" name="email"><br><br>
         <input type="submit" value="Відправити">
     </form>
+        </div>
+
+<div id="ind2">
+    <h1 id="Independent2">САМОСТІЙНА РОБОТА №2</h1>
+    <h2>1.1. CSS Синтаксис</h2>
+    <p class="section-1-1">Це абзац з класом, який буде стилізовано.</p>
+    <style>
+        .section-1-1 {
+            color: rgb(102, 0, 255);
+            text-align: center;
+        }
+    </style>
+
+    <h2>1.2. CSS Селектори</h2>
+    <p id="para1">Наведене нижче правило CSS буде застосовано до елементу HTML з id="para1":</p>
+    <style>
+        #para1 {
+            color: rgb(136, 0, 255);
+            text-align: center;
+        }
+    </style>
+
+    <p>В цьому прикладі всі HTML елементи з class="center" будуть червоними та вирівняні по центру:</p>
+    <style>
+        .center {
+            text-align: center;
+            color: red;
+        }
+    </style>
+
+    <h1 class="center">Червоний заголовок по центру</h1>
+    <p class="center">Червоний параграф з вирівнюванням по центру.</p>
+
+    <h2>1.3. CSS Кольори (RGB, HEX, HSL).</h2>
+    <h1 style="background-color:rgb(146, 200, 255);">Hello World</h1>
+    <p style="background-color:rgb(255, 0, 0);">Lorem ipsum...</p>
+    <h1 style="color:rgb(255, 0, 0);">Hello World</h1>
+    <p style="color:rgb(146, 200, 255);">Lorem ipsum...</p>
+    <p style="color:rgb(99, 255, 169);">Ut wisi enim...</p>
+    <h1 style="border:2px solid rgb(255, 0, 0);">Hello World</h1>
+    <h1 style="border:2px solid rgb(146, 200, 255);">Hello World</h1>
+    <h1 style="border:2px solid rgb(255, 173, 255);">Hello World</h1>
+
+    <h2>1.4. CSS Фони</h2>
+
+    <h1 class="section-1-4-1">CSS background-color приклад!</h1>
+    <div class="section-1-1-2">
+        Цей текст всередині елемента div.
+        <p class="section-1-1-3">Цей параграф має власний колір фону</p>
+        Ми все ще знаходимось в елементі div.
+    </div>
+
+    <style>
+        .section-1-4-1 {
+            background-color: rgb(123, 0, 255);
+        }
+
+        .section-1-4-2 {
+            background-color: rgb(145, 228, 255);
+        }
+
+        .section-1-1-3 {
+            background-color: rgb(255, 255, 0);
+        }
+    </style>
+
+    <h2>1.5. CSS Межі</h2>
+    <style>
+        p.dotted {
+            border-style: dotted;
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+
+        p.double {
+            border-style: double;
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+
+        p.none {
+            border-style: none;
+        }
+
+        p.hidden {
+            border-style: hidden;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+    </style>
+    <p class="dotted">Точкова рамка.</p>
+    <p class="dashed">Пунктирна рамка.</p>
+    <p class="solid">Суцільна рамка.</p>
+    <p class="double">Подвійна рамка.</p>
+    <p class="groove">Гравірована рамка.</p>
+    <p class="ridge">Рельєфна рамка.</p>
+    <p class="inset">Вдавлена рамка.</p>
+    <p class="outset">Опукла рамка.</p>
+    <p class="none">Без рамки.</p>
+    <p class="hidden">Прихована рамка.</p>
+    <p class="mix">Змішана рамка.</p>
+
+
+    <h2>1.6. CSS Поля </h2>
+    <h2 class="section-1-6-1">Використання індивідуальних властивостей полів</h2>
+    <style>
+        .section-1-6-1 {
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            background-color: rgb(200, 241, 255);
+        }
+    </style>
+
+    <div class="section-1-6-2">
+        Цей div буде центрований по горизонталі, тому що в нього margin: auto;
+    </div>
+
+    <style>
+        .section-1-6-2 {
+            width: 300px;
+            margin: auto;
+            border: 1px solid red;
+        }
+    </style>
+
+    <h2>1.8. CSS Padding - Внутрішній відступ </h2>
+    <div class="section-1-8-1">Цей елемент div має верхній відступ 50 пікселів, правий відступ 30 пікселів, нижній
+        відступ 50 пікселів і лівий відступ 80 пікселів.</div>
+
+    <style>
+        .section-1-8-1 {
+            border: 1px solid black;
+            background-color: rgb(96, 236, 254);
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+        }
+    </style>
+    <h2>1.9. CSS Висота, ширина і максимальна ширина </h2>
+    <p class="section-1-9-1">Цей елемент div має висоту 200 пікселів і ширину 50%:</p>
+
+    <style>
+        .section-1-9-1 {
+            height: 200px;
+            width: 50%;
+            background-color: rgb(96, 236, 254);
+            text-align: center;
+        }
+    </style>
+    <p class="section-1-9-2">Цей елемент div має висоту 100 пікселів і максимальну ширину 500 пікселів:</p>
+
+    <style>
+        .section-1-9-2 {
+            max-width: 500px;
+            height: 100px;
+            background-color: rgb(96, 236, 254);
+        }
+    </style>
+
+
+    <h2>1.10. CSS Блочна модель. </h2>
+    <div class="section-1-10-1">Цей беззмістовний текст є вмістом блоку. Ми додали відступ 50 пікселів, поле 20 пікселів
+        і зелену рамку 15 пікселів. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+        id est laborum.</div>
+    <style>
+        .section-1-10-1 {
+            background-color: lightgrey;
+            width: 300px;
+            border: 15px solid rgb(128, 0, 34);
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+    <h2>1.11. CSS Іконки. </h2>
+    <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i>
+
+    <h2>1.12. CSS Посилання. </h2>
+    <p class="section-1-12-1"><b><a href="index.html" target="_blank">Це посилання</a></b></p>
+    <p><b>Примітка:</b> a:hover ПОВИНЕН бути після a:link і a:visited у визначенні CSS, щоб бути ефективним.</p>
+    <p><b>Примітка:</b> a:active ПОВИНЕН бути після a:hover у визначенні CSS, щоб бути ефективним.</p>
+    <style>
+        /* непереглянуте посилання */
+        .section-1-12-1:link {
+            color: red;
+        }
+
+        /* переглянуте посилання */
+        .section-1-12-1:visited {
+            color: green;
+        }
+
+        /* курсор над посиланням */
+        .section-1-12-1:hover {
+            color: hotpink;
+        }
+
+        /* вибране посилання */
+        .section-1-12-1:active {
+            color: blue;
+        }
+    </style>
+
+    <p>Посилання стилізується як кнопка:</p>
+    <a class="section-1-12-2" href="index.html" target="_blank">Це посилання</a>
+
+    <style>
+        .section-1-12-2:link,
+        .section-1-12-2:visited {
+            background-color: #f4368b;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .section-1-12-2:hover,
+        .section-1-12-2:active {
+            background-color: rgb(255, 0, 247);
+        }
+    </style>
+
+    <style>
+        a.one:link {
+            color: #7300ff;
+        }
+
+        a.one:visited {
+            color: #0000ff;
+        }
+
+        a.one:hover {
+            color: #ffcc00;
+        }
+
+        a.two:link {
+            color: #7300ff;
+        }
+
+        a.two:visited {
+            color: #0000ff;
+        }
+
+        a.two:hover {
+            font-size: 150%;
+        }
+
+        a.three:link {
+            color: #7300ff;
+        }
+
+        a.three:visited {
+            color: #0000ff;
+        }
+
+        a.three:hover {
+            background: #66ff66;
+        }
+
+        a.four:link {
+            color: #7300ff;
+        }
+
+        a.four:visited {
+            color: #0000ff;
+        }
+
+        a.four:hover {
+            font-family: monospace;
+        }
+
+        a.five:link {
+            color: #7300ff;
+            text-decoration: none;
+        }
+
+        a.five:visited {
+            color: #0000ff;
+            text-decoration: none;
+        }
+
+        a.five:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <p>Наведіть курсор на посилання, щоб побачити, як вони змінюють макет:</p>
+
+    <p><b><a class="one" href="default.asp" target="_blank">Це посилання змінює колір</a></b></p>
+    <p><b><a class="two" href="default.asp" target="_blank">Це посилання змінює розмір шрифту</a></b></p>
+    <p><b><a class="three" href="default.asp" target="_blank">Це посилання змінює колір фону</a></b></p>
+    <p><b><a class="four" href="default.asp" target="_blank">Це посилання змінює шрифт</a></b></p>
+    <p><b><a class="five" href="default.asp" target="_blank">Це посилання змінює оформлення тексту</a></b></p>
+
+    <h2>1.13. CSS Списки. </h2>
+    <style>
+        ul.a {
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+    </style>
+
+    <h2>Списки</h2>
+
+    <p>Приклад невпорядкованих списків:</p>
+    <ul class="a">
+        <li>Кава</li>
+        <li>Чай</li>
+        <li>Кока-кола</li>
+    </ul>
+
+    <ul class="b">
+        <li>Кава</li>
+        <li>Чай</li>
+        <li>Кока-кола</li>
+    </ul>
+
+    <p>Приклад впорядкованих списків:</p>
+    <ol class="c">
+        <li>Кава</li>
+        <li>Чай</li>
+        <li>Кока-кола</li>
+    </ol>
+
+    <ol class="d">
+        <li>Кава</li>
+        <li>Чай</li>
+        <li>Кока-кола</li>
+    </ol>
+
+
+    <style>
+        ol.section-1-13-1 {
+            background: #99ffb3;
+            padding: 20px;
+        }
+
+        ul.section-1-13-2 {
+            background: #fba3ee;
+            padding: 20px;
+        }
+
+        ol.section-1-13-1 li {
+            background: #d0a4f8;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        ul.section-1-13-2 li {
+            background: #a1e5f1;
+            margin: 5px;
+        }
+    </style>
+
+    <h1>Стилізація списків за допомогою кольорів:</h1>
+
+    <ol class="section-1-13-1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ul class="section-1-13-2">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h2>1.14. CSS Таблиці.Межі </h2>
+    <style>
+        table.section-1-14-1,
+        th.section-1-14-2,
+        td.section-1-14-3 {
+            border: 1px solid black;
+        }
+    </style>
+
+    <table class="section-1-14-1">
+        <tr>
+            <th class="section-1-14-2">Firstname</th>
+            <th class="section-1-14-2">Lastname</th>
+        </tr>
+        <tr>
+            <td class="section-1-14-3">Peter</td>
+            <td class="section-1-14-3">Griffin</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-3">Lois</td>
+            <td class="section-1-14-3">Griffin</td>
+        </tr>
+    </table>
+
+    <style>
+        table.section-1-14-4,
+        th.section-1-14-5,
+        td.section-1-14-6 {
+            border: 1px solid black;
+        }
+
+        table.section-1-14-4 {
+            width: 100%;
+        }
+    </style>
+
+    <h2>Таблица на всю ширину</h2>
+
+    <table class="section-1-14-4">
+        <tr>
+            <th class="section-1-14-5">Имя</th>
+            <th class="section-1-14-5">Фамилия</th>
+        </tr>
+        <tr>
+            <td class="section-1-14-6">Peter</td>
+            <td class="section-1-14-6">Griffin</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-6">Lois</td>
+            <td class="section-1-14-6">Griffin</td>
+        </tr>
+    </table>
+
+    <h2>1.14.1. CSS Розмір таблиці. </h2>
+    <style>
+        table.section-1-14-1-1,
+        td.section-1-14-1-2,
+        th.section-1-14-1-3 {
+            border: 1px solid black;
+        }
+
+        table.section-1-14-1-1 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th.section-1-14-1-3 {
+            height: 70px;
+        }
+    </style>
+
+
+    <h2>Властивості ширини та висоти</h2>
+
+    <p>Встановлено ширину таблиці та висоту рядка заголовка таблиці:</p>
+
+    <table class="section-1-14-1-1">
+        <tr>
+            <th class="section-1-14-1-3">Ім'я</th>
+            <th class="section-1-14-1-3">Прізвище</th>
+            <th class="section-1-14-1-3">Заощадження</th>
+        </tr>
+        <tr>
+            <td class="section-1-14-1-2">Пітер</td>
+            <td class="section-1-14-1-2">Гріффін</td>
+            <td class="section-1-14-1-2">$100</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-1-2">Лоїс</td>
+            <td class="section-1-14-1-2">Гріффін</td>
+            <td class="section-1-14-1-2">$150</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-1-2">Джо</td>
+            <td class="section-1-14-1-2">Свансон</td>
+            <td class="section-1-14-1-2">$300</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-1-2">Клівленд</td>
+            <td class="section-1-14-1-2">Браун</td>
+            <td class="section-1-14-1-2">$250</td>
+        </tr>
+    </table>
+
+    <h2>1.14.2. Вирівнювання таблиці CSS. </h2>
+    <style>
+        table.section-1-14-2-1,
+        td.section-1-14-2-2,
+        th.section-1-14-2-3 {
+            border: 1px solid black;
+        }
+
+        table.section-1-14-2-1 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td.section-1-14-2-2 {
+            text-align: center;
+        }
+    </style>
+
+    <h2>Властивість text-align</h2>
+
+    <p>Ця властивість встановлює горизонтальне вирівнювання (ліворуч, праворуч або по центру) вмісту в елементах
+        <code>th</code> або <code>td</code>.</p>
+
+    <table class="section-1-14-2-1">
+        <tr>
+            <th class="section-1-14-2-3">Ім'я</th>
+            <th class="section-1-14-2-3">Прізвище</th>
+            <th class="section-1-14-2-3">Заощадження</th>
+        </tr>
+        <tr>
+            <td class="section-1-14-2-2">Пітер</td>
+            <td class="section-1-14-2-2">Гріффін</td>
+            <td class="section-1-14-2-2">$100</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-2-2">Лоїс</td>
+            <td class="section-1-14-2-2">Гріффін</td>
+            <td class="section-1-14-2-2">$150</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-2-2">Джо</td>
+            <td class="section-1-14-2-2">Свансон</td>
+            <td class="section-1-14-2-2">$300</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-2-2">Клівленд</td>
+            <td class="section-1-14-2-2">Браун</td>
+            <td class="section-1-14-2-2">$250</td>
+        </tr>
+    </table>
+
+    <h2>1.14.3. Стиль таблиці CSS. </h2>
+    <style>
+        table.section-1-14-3-1 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th.section-1-14-3-3,
+        td.section-1-14-3-2 {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #f600cd;
+        }
+    </style>
+
+    <h2>Горизонтальні роздільники для таблиці</h2>
+    <p>Додайте властивість <code>border-bottom</code> до <code>th</code> та <code>td</code> для горизонтальних
+        роздільників:</p>
+
+    <table class="section-1-14-3-1">
+        <tr>
+            <th class="section-1-14-3-3">Ім'я</th>
+            <th class="section-1-14-3-3">Прізвище</th>
+            <th class="section-1-14-3-3">Заощадження</th>
+        </tr>
+        <tr>
+            <td class="section-1-14-3-2">Пітер</td>
+            <td class="section-1-14-3-2">Гріффін</td>
+            <td class="section-1-14-3-2">$100</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-3-2">Лоїс</td>
+            <td class="section-1-14-3-2">Гріффін</td>
+            <td class="section-1-14-3-2">$150</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-3-2">Джо</td>
+            <td class="section-1-14-3-2">Свансон</td>
+            <td class="section-1-14-3-2">$300</td>
+        </tr>
+        <tr>
+            <td class="section-1-14-3-2">Клівленд</td>
+            <td class="section-1-14-3-2">Браун</td>
+            <td class="section-1-14-3-2">$250</td>
+        </tr>
+    </table>
+
+
+    <h2>1.14.4. CSS адаптивна таблиця. </h2>
+    <style>
+        table.section-1-14-4-1 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th.section-1-14-4-3,
+        td.section-1-14-4-2 {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr.section-1-14-5-3:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+    </style>
+
+    <h2>Responsive Table</h2>
+    <p>A responsive table will display a horizontal scroll bar if the screen is too
+        small to display the full content. Resize the browser window to see the effect:</p>
+    <p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the
+        table element:</p>
+
+    <div style="overflow-x: auto;">
+        <table class="section-1-14-4-1">
+            <tr class="section-1-14-5-3">
+                <th class="section-1-14-4-3">First Name</th>
+                <th class="section-1-14-4-3">Last Name</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+                <th class="section-1-14-4-3">Points</th>
+            </tr>
+            <tr class="section-1-14-5-3">
+                <td class="section-1-14-4-2">Jill</td>
+                <td class="section-1-14-4-2">Smith</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+                <td class="section-1-14-4-2">50</td>
+            </tr>
+            <tr class="section-1-14-5-3">
+                <td class="section-1-14-4-2">Eve</td>
+                <td class="section-1-14-4-2">Jackson</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+                <td class="section-1-14-4-2">94</td>
+            </tr>
+            <tr class="section-1-14-5-3">
+                <td class="section-1-14-4-2">Adam</td>
+                <td class="section-1-14-4-2">Johnson</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+                <td class="section-1-14-4-2">67</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>2. CSS ПРОДВИНУТИЙ</h2>
+    <h2>2.1. Заокруглені кути. </h2>
+    <style>
+        #rcorners1 {
+            border-radius: 25px;
+            background: #5021ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners2 {
+            border-radius: 25px;
+            border: 2px solid #5021ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+    <h1>The border-radius Property</h1>
+
+    <p>Rounded corners for an element with a specified background color:</p>
+    <p id="rcorners1">Rounded corners!</p>
+    <p>Rounded corners for an element with a border:</p>
+    <p id="rcorners2">Rounded corners!</p>
+
+    <style>
+        #rcorners1-1 {
+            border-radius: 15px 50px 30px 5px;
+            background: #5021ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners2-1 {
+            border-radius: 15px 50px 30px;
+            background: #5021ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners3-1 {
+            border-radius: 15px 50px;
+            background: #5021ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners4-1 {
+            border-radius: 15px;
+            background: #5021ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+
+    <h1>The border-radius Property</h1>
+
+    <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+    <p id="rcorners1-1"></p>
+
+    <p>Three values - border-radius: 15px 50px 30px:</p>
+    <p id="rcorners2-1"></p>
+
+    <p>Two values - border-radius: 15px 50px:</p>
+    <p id="rcorners3-1"></p>
+
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners4-1"></p>
+
+
+    <h2>2.2. CSS анімації. </h2>
+
+    <style>
+        div.section-2-2-1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 162, 255);
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            from {
+                background-color: rgb(0, 162, 255);
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+    </style>
+    <h1>CSS Animation</h1>
+    <div class="section-2-2-1"></div>
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+    <style>
+        div.section-2-2-2 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 162, 255);
+            position: relative;
+            animation-name: example1;
+            animation-duration: 4s;
+        }
+
+        @keyframes example1 {
+            0% {
+                background-color: rgb(0, 162, 255);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(0, 255, 55);
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: rgb(101, 101, 251);
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: rgb(235, 110, 181);
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+
+    <div class="section-2-2-2"></div>
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+    <h2>2.3. Підказки CSS. </h2>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+
+
+    <h2>Basic Tooltip</h2>
+
+    <p>Move the mouse over the text below:</p>
+
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+    </div>
+
+    <p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how
+        to position the tooltip in a desirable way.</p>
+
+    <h2>2.4. Кнопки CSS. </h2>
+    <style>
+        .button {
+            background-color: #72f7c6;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+
+    <button>Default Button</button>
+    <a href="#" class="button">Link Button</a>
+    <button class="button">Button</button>
+    <input type="button" class="button" value="Input Button">
+
+    <style>
+        .button {
+            background-color: #72f7c6;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button-green {
+            background-color: white;
+            color: black;
+            border: 2px solid #72f7c6;
+            /* Green Border */
+        }
+
+        .button-blue {
+            background-color: white;
+            color: black;
+            border: 2px solid #48c3ec;
+            /* Blue Border */
+        }
+
+        .button-red {
+            background-color: white;
+            color: black;
+            border: 2px solid #f44336;
+            /* Red Border */
+        }
+
+        .button-gray {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            /* Gray Border */
+        }
+
+        .button-black {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+            /* Black Border */
+        }
+    </style>
+
+    <h2>Colored Button Borders</h2>
+
+    <p>Use the border property to add a border to the button:</p>
+
+    <button class="button button-green">Green</button>
+    <button class="button button-blue">Blue</button>
+    <button class="button button-red">Red</button>
+    <button class="button button-gray">Gray</button>
+    <button class="button button-black">Black</button>
+
+    <h2>2.5. CSS Пагінація. </h2>
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: rgb(108, 0, 0);
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+    </style>
+    <h2>Simple Pagination</h2>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+    <style>
+        .pagination-container {
+            display: inline-block;
+        }
+
+        .pagination-link {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+        }
+
+        .pagination-link.active {
+            background-color: #72f7c6;
+            /* Active link color */
+            color: white;
+            border: 1px solid #72f7c6;
+            /* Active link border color */
+        }
+
+        .pagination-link:hover:not(.active) {
+            background-color: #ddd;
+            /* Hover effect for non-active links */
+        }
+    </style>
+
+    <h2>Pagination with Borders</h2>
+
+    <div class="pagination-container">
+        <a href="#" class="pagination-link">&laquo;</a>
+        <a href="#" class="pagination-link">1</a>
+        <a href="#" class="pagination-link active">2</a>
+        <a href="#" class="pagination-link">3</a>
+        <a href="#" class="pagination-link">4</a>
+        <a href="#" class="pagination-link">5</a>
+        <a href="#" class="pagination-link">6</a>
+        <a href="#" class="pagination-link">&raquo;</a>
+    </div>
+
+    <h2>2.6. Створення стовпців CSS. </h2>
+    <style>
+        .newspaper {
+            column-count: 3;
+        }
+    </style>
+
+    <h1>Create Multiple Columns</h1>
+
+    <div class="newspaper">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+        possim assum.
+    </div>
+
+    <h2>2.7. Випадаючі списки CSS. </h2>
+    <style>
+        .dropbtn {
+            background-color: #72f7c6;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #72f7c6;
+        }
+    </style>
+
+    <h2>Dropdown Menu</h2>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
+
+    <style>
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown-container:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+
+    <h2>Hoverable Dropdown</h2>
+    <p>Move the mouse over the text below to open the dropdown content.</p>
+
+    <div class="dropdown-container">
+        <span>Mouse over me</span>
+        <div class="dropdown-menu">
+            <p>Hello World!</p>
+        </div>
+    </div>
+
+    <h2>2.8. Кольорові ключові слова CSS. </h2>
+    <style>
+        body {
+            background-image: url("paper.gif");
+        }
+
+        div.ex1 {
+            background-color: lightgreen;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        div.ex2 {
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 15px;
+        }
+    </style>
+
+    <h2>The transparent Keyword</h2>
+
+    <div class="ex1">This div has a light green background.</div>
+    <br>
+    <div class="ex2">This div has a transparent background.</div>
+
+    <style>
+        .red-border {
+            border: 2px solid rgb(0, 255, 64);
+        }
+
+        .blue-border {
+            border: 2px dotted blue;
+        }
+
+        .inherit-border {
+            border: inherit;
+        }
+    </style>
+
+    <h2>The inherit Keyword</h2>
+
+    <div class="red-border">Here, the <span class="inherit-border">span element's</span> border settings will be
+        inherited from the parent element.</div>
+    <br>
+
+    <div class="blue-border">Here, the <span class="inherit-border">span element's</span> border settings will also be
+        inherited from the parent element.</div>
+
+    <h2>2.9. Тіньові ефекти CSS. </h2>
+    <style>
+        h1.ex1 {
+            text-shadow: 2px 2px 5px rgb(112, 5, 64);
+        }
+    </style>
+    <h1 class="ex1">Text-shadow effect!</h1>
+
+    <style>
+        h1.ex2 {
+            color: white;
+            text-shadow: 2px 2px 4px #480101;
+        }
+    </style>
+
+    <h1 class="ex2">Text-shadow effect!</h1>
+
+    <style>
+        h1.ex3 {
+            text-shadow: 2px 2px rgb(0, 238, 255);
+        }
+    </style>
+
+    <h1 class="ex3">Text-shadow effect!</h1>
+
+    <h2>2.10. CSS Box Shadow. </h2>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: rgb(106, 80, 255);
+            box-shadow: 10px 10px rgb(184, 230, 173);
+        }
+    </style>
+
+    <h1>The box-shadow Property</h1>
+
+    <div class="box">A div element with a lightblue box-shadow</div>
+
+    <h2>2.11. Переходи CSS. </h2>
+    <style>
+        .transition-box {
+            width: 100px;
+            height: 100px;
+            background: rgb(18, 1, 112);
+            transition: width 2s;
+        }
+
+        .transition-box:hover {
+            width: 300px;
+        }
+    </style>
+
+    <h1>The transition Property</h1>
+
+    <p>Hover over the div element below to see the transition effect:</p>
+    <div class="transition-box"></div>
+
+    <style>
+        .transition-box {
+            width: 100px;
+            height: 100px;
+            background: #72f7c6;
+            transition: width 2s;
+        }
+
+        .transition-linear {
+            transition-timing-function: linear;
+        }
+
+        .transition-ease {
+            transition-timing-function: ease;
+        }
+
+        .transition-ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .transition-ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .transition-ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+
+        .transition-box:hover {
+            width: 300px;
+        }
+    </style>
+
+    <h1>The transition-timing-function Property</h1>
+
+    <p>Hover over the div elements below to see the different speed curves:</p>
+
+    <div class="transition-box transition-linear">linear</div><br>
+    <div class="transition-box transition-ease">ease</div><br>
+    <div class="transition-box transition-ease-in">ease-in</div><br>
+    <div class="transition-box transition-ease-out">ease-out</div><br>
+    <div class="transition-box transition-ease-in-out">ease-in-out</div><br>
+
+    <h2>2.12. Текстові ефекти CSS. </h2>
+    <style>
+        p.test1 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        p.test2 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+
+    <h1>The text-overflow Property</h1>
+    <p>The following two paragraphs contains a long text that will not fit in the box.</p>
+
+    <h2>text-overflow: clip:</h2>
+    <p class="test1">This is some long text that will not fit in the box</p>
+
+    <h2>text-overflow: ellipsis:</h2>
+    <p class="test2">This is some long text that will not fit in the box</p>
+
+    <style>
+        p.test {
+            width: 11em;
+            border: 1px solid #000000;
+            word-wrap: break-word;
+        }
+    </style>
+
+    <h1>The word-wrap Property</h1>
+
+    <p class="test">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word
+        will break and wrap to the next line.</p>
+</div>
 </main>
 <footer>
 
